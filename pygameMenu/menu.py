@@ -562,9 +562,9 @@ class Menu(object):
                         return True
             elif event.type == _pygame.JOYHATMOTION:
                 if event.value == _locals.JOY_UP:
-                    self._up()
-                elif event.value == _locals.JOY_DOWN:
                     self._down()
+                elif event.value == _locals.JOY_DOWN:
+                    self._up()
                 elif event.value == _locals.JOY_LEFT:
                     self._left()
                 elif event.value == _locals.JOY_RIGHT:
